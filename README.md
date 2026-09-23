@@ -1,6 +1,6 @@
 # Responder Incident Brief
 
-**SolTelco concept demo · Unified Communications · DEMO v45**
+**SolTelco concept demo · Unified Communications · DEMO v46**
 
 A responder joins an incident already in progress. Three agents read the radio
 traffic, check each fact against the original message, and write a short
@@ -22,7 +22,7 @@ the file directly. The local server exists only so the page is served over
 `http://127.0.0.1` rather than `file://`.
 
 Demo mode needs no key, no network and no setup. Confirm the header pill
-tooltip reads **DEMO v45**.
+tooltip reads **DEMO v46**.
 
 ---
 
@@ -41,8 +41,8 @@ The Live workflow moves through three screens:
 1. **Setup** — pick the incident, pick the model, toggle radio audio, run it.
 2. **Run** — a full-screen trace: event intake, Signal, Safety, Briefing,
    responder handoff. Each step lights up as it completes. **Skip to result**
-   or **Escape** fast-forwards the remaining steps; the result opens only
-   once the workflow has finished.
+   or **Escape** fast-forwards the remaining steps, cutting any clip that is
+   playing; the result opens only once the workflow has finished.
 3. **Result** — the briefing with a source link on every fact, the source
    transmissions beside it, trust metrics, and an expandable
    **How this briefing was built** section showing each agent's input, output
