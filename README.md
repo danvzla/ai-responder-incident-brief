@@ -1,6 +1,6 @@
 # Responder Incident Brief
 
-**SolTelco concept demo · Unified Communications · DEMO v46**
+**SolTelco concept demo · Unified Communications · DEMO **
 
 A responder joins an incident already in progress. Three agents read the radio
 traffic, check each fact against the original message, and write a short
