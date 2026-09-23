@@ -1,6 +1,6 @@
 # Responder Incident Brief
 
-**SolTelco concept demo · Unified Communications ·**
+**SolTelco concept demo · Unified Communications · DEMO v45**
 
 A responder joins an incident already in progress. Three agents read the radio
 traffic, check each fact against the original message, and write a short
@@ -22,7 +22,7 @@ the file directly. The local server exists only so the page is served over
 `http://127.0.0.1` rather than `file://`.
 
 Demo mode needs no key, no network and no setup. Confirm the header pill
-tooltip reads **DEMO v44**.
+tooltip reads **DEMO v45**.
 
 ---
 
@@ -41,7 +41,8 @@ The Live workflow moves through three screens:
 1. **Setup** — pick the incident, pick the model, toggle radio audio, run it.
 2. **Run** — a full-screen trace: event intake, Signal, Safety, Briefing,
    responder handoff. Each step lights up as it completes. **Skip to result**
-   or **Escape** jumps ahead.
+   or **Escape** fast-forwards the remaining steps; the result opens only
+   once the workflow has finished.
 3. **Result** — the briefing with a source link on every fact, the source
    transmissions beside it, trust metrics, and an expandable
    **How this briefing was built** section showing each agent's input, output
@@ -113,6 +114,12 @@ with an authenticated server-side gateway.
 ---
 
 ## Present it accurately
+
+**Demo mode and connected mode are not the same thing.** In Demo mode the
+agent outputs are scripted and deterministic — the review step is a simulation
+of the contract, not a model judging anything. In connected mode the browser
+makes three real model calls, and Safety genuinely reviews Signal's output
+against the original messages. Say which mode you are showing.
 
 What this demo does:
 
