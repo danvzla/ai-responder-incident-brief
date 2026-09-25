@@ -16,7 +16,7 @@ class DemoHandler(SimpleHTTPRequestHandler):
 def main():
     handler = partial(DemoHandler, directory=str(Path(__file__).resolve().parent))
     server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    url = f"http://127.0.0.1:{server.server_port}/?demo=26"
+    url = f"http://127.0.0.1:{server.server_port}/?demo=46"
     print(f"Responder Incident Brief: {url}", flush=True)
     print("The browser calls Claude or OpenAI directly in connected mode. Ctrl+C stops the local page server.", flush=True)
     threading.Timer(0.5, lambda: webbrowser.open(url)).start()
